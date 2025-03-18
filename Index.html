@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Reels Downloader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #1877f2;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #145dbf;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Facebook Reels Downloader</h1>
+    <p>Paste the URL of the Facebook Reel you want to download:</p>
+    <input type="text" id="reelUrl" placeholder="Enter Facebook Reel URL">
+    <button onclick="downloadReel()">Download</button>
+</div>
+
+<script>
+    function downloadReel() {
+        const url = document.getElementById('reelUrl').value;
+        if (url) {
+            // Logic to handle the download (this requires a backend service)
+            alert('Download functionality is not implemented in this example.');
+        } else {
+            alert('Please enter a valid URL.');
+        }
+    }
+</script>
+
+</body>
+</html>
